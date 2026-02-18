@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intermediate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+<div class="navbar">
+
+    <div class="nav-left">
+        <span class="back-btn"
+              onclick="location.href='levels.html'">←</span>
+    </div>
+
+    <div class="nav-right">
+        <span class="icon"
+              onclick="toggleMenu()">⚙️</span>
+    </div>
+
+</div>
+
+            <div id="sideMenu" class="side-menu">
+                <p onclick="location.href='dashboard.html'">Dashboard</p>
+                <p onclick="location.href='account.html'">Account</p>
+                <p onclick="location.href='privacy.html'">Privacy</p>
+                <p onclick="logout()">Logout</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page=center intermediate-layout">
+
+  <div class="card">
+    <h2>Intermediate Learning </h2>
+    <ul>
+      <li>APIs</li>
+      <li>Database</li>
+      <li>Authentication</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Ask AI Mentor</h3>
+
+    <div id="chatBox" class="chat-container"></div>
+
+    <input type="text" id="chatInput" placeholder="Type your question...">
+    <button class="btn" onclick="sendMessage('intermediate')">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js?v=9999"></script>
+</body>
+</html>

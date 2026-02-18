@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - GlintX AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+    <div class="nav-left">
+        <img src="logo.png" class="nav-logo">
+        <h2>GlintX AI</h2>
+    </div>
+
+    <div class="nav-right">
+        <span class="icon" onclick="goNotifications()">🔔</span>
+        <span class="icon" onclick="toggleMenu()">☰</span>
+    </div>
+
+</div>
+
+<!-- SIDE MENU (IMPORTANT: OUTSIDE NAVBAR) -->
+<div id="sideMenu" class="side-menu">
+    <p onclick="goProfile()">Profile</p>
+    <p onclick="goNotifications()">Notifications</p>
+    <p onclick="goSettings()">Settings</p>
+    <p onclick="logout()" class="logout-item">Logout</p>
+</div>
+
+<div class="page-center welcome-adjust">
+  <div class="card">
+    <h2 id="welcomeText"></h2>
+    <p>Continue your learning journey.</p>
+    <br>
+    <button class="btn" onclick="goLevels()">Start Learning</button>
+  </div>
+</div>
+
+<div id="appPopup" class="success-popup"></div>
+
+<script src="script.js?v=9999"></script>
+</body>
+</html>

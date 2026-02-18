@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+<div class="navbar">
+
+    <div class="nav-left">
+        <span class="back-btn"
+              onclick="location.href='levels.html'">←</span>
+    </div>
+
+    <div class="nav-right">
+        <span class="icon"
+              onclick="toggleMenu()">⚙️</span>
+    </div>
+
+</div>
+
+            <div id="sideMenu" class="side-menu">
+                <p onclick="location.href='dashboard.html'">Dashboard</p>
+                <p onclick="location.href='account.html'">Account</p>
+                <p onclick="location.href='privacy.html'">Privacy</p>
+                <p onclick="logout()">Logout</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="page-center expert-layout">
+
+  <div class="card">
+    <h2>Expert Learning </h2>
+    <ul>
+      <li>System Design</li>
+      <li>Cloud</li>
+      <li>Security</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Ask AI Mentor</h3>
+
+    <div id="chatBox" class="chat-container"></div>
+
+    <input type="text" id="chatInput" placeholder="Type your question...">
+    <button class="btn" onclick="sendMessage('expert')">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js?v=9999"></script>
+</body>
+</html>

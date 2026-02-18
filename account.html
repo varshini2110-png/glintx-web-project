@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account - GlintX AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar simple-nav">
+  <span onclick="goSettings()">⬅ Back to Settings</span>
+</div>
+
+<div class="container settings-page">
+  <div class="card">
+    <h2>Account Details</h2>
+
+    <p><strong>Username:</strong> <span id="accUser"></span></p>
+    <p><strong>Email:</strong> <span id="accEmail"></span></p>
+
+    <br>
+
+    <button class="btn">Edit Profile</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("accUser").innerText =
+    localStorage.getItem("user");
+
+  document.getElementById("accEmail").innerText =
+    localStorage.getItem("email");
+</script>
+
+</body>
+</html>

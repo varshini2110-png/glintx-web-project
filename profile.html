@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile - GlintX AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar simple-nav">
+  <span onclick="goDashboard()">⬅ Dashboard</span>
+</div>
+
+<div class="container">
+
+  <div class="card" style="text-align:center;">
+
+    <img src="profile.png" 
+         style="width:100px;height:100px;border-radius:50%;margin-bottom:15px;">
+
+    <h2 id="profileName"></h2>
+    <p id="profileEmail"></p>
+
+    <br>
+
+    <button class="btn" onclick="editProfile()">Edit Profile</button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+  document.getElementById("profileName").innerText =
+    localStorage.getItem("user");
+
+  document.getElementById("profileEmail").innerText =
+    localStorage.getItem("email");
+</script>
+
+</body>
+</html>

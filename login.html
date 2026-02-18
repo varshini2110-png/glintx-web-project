@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-screen login-bg">
+
+<div class="card auth-card">
+  <h2 class="login-title">
+    <img src="logo.png" class="login-logo">
+    Login
+</h2>
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+
+ <button type="button" class="btn" onclick="login(); return false;">Login</button>
+  <div class="divider">
+    <span>OR</span>
+</div>
+  <!-- 👇 Google & GitHub here -->
+<div class="social-login">
+    
+    <button class="google-btn">
+        <img src="google.png" alt="Google">
+        Continue with Google
+    </button>
+<div class="divider">
+    <span>OR</span>
+</div>
+    <button class="github-btn">
+        <img src="github.png" alt="GitHub">
+        Continue with GitHub
+    </button>
+
+</div>
+
+<p>New user? <a href="signup.html">Create account</a></p>
+<div id="appPopup" class="success-popup">
+</div>
+<script src="script.js?v=9999"></script>
+</body>
+</html>

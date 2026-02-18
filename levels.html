@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Levels - GlintX AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-left">
+            <span style="cursor:pointer;" onclick="goDashboard()">⬅ Dashboard</span>
+        </div>
+
+        <div class="nav-right">
+            <span style="cursor:pointer;" onclick="goNotifications()">🔔</span>
+            <span style="cursor:pointer;" onclick="goSettings()">⚙</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <div class="card">
+            <h2>Select Your Learning Level</h2>
+            <p>Choose the level that matches your skills.</p>
+            <div class="level-dropdown">
+    <button class="btn" onclick="toggleLevels()">Select Level</button>
+
+    <div id="levelOptions" class="level-options" style="display:none;">
+        <div onclick="location.href='beginner.html'">Beginner</div>
+        <div onclick="location.href='intermediate.html'">Intermediate</div>
+        <div onclick="location.href='expert.html'">Expert</div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
